@@ -15,7 +15,7 @@ def download_galaxy():
     for i in range(start, end):
         try:
             url = "http://skyserver.sdss.org/dr16/SkyServerWS/ImgCutout/getjpeg?ra={}&dec={}".format(images[i,0],images[i,1])
-            img = "yes_bar/image_{:04d}.jpg".format(i)
+            img = "image_{:04d}.jpg".format(i)
             print("Downloading galaxy {}...".format(i))
             urllib.request.urlretrieve(url, img)
         except:
