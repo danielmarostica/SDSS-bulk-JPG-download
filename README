@@ -1,0 +1,16 @@
+Python 3+ Sloan Digital Sky Survey (SDSS) bulk jpeg image download script.
+
+For bulk download, start many terminal instances.
+
+You can add arguments to the url string:
+http://skyserver.sdss.org/dr16/SkyServerWS/ImgCutout/getjpeg?ra={}&dec={}
+http://skyserver.sdss.org/dr16/SkyServerWS/ImgCutout/getjpeg?ra={}&dec={}&scale={}&width={}&height={}&opt={}&query={}
+
+Example image: http://skyserver.sdss.org/dr16/SkyServerWS/ImgCutout/getjpeg?ra=179.689293428354&dec=-0.454379056007667&scale=0.79224&width=512&height=512&opt=&query=
+
+Usage:
+$ python3 download_images.py start stop
+
+Example:
+$ python3 download_images.py 0 100
+$ python3 download_images.py 100 200
