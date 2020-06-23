@@ -14,3 +14,5 @@ $ python3 download_images.py start stop
 Example:
 $ python3 download_images.py 0 100
 $ python3 download_images.py 100 200
+
+You can find CSV files with sky positions of classified galaxies at: https://data.galaxyzoo.org/
